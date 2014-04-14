@@ -22,4 +22,9 @@ describe InsertionSort do
       assert_sort array
     end
   end
+  
+  context "all numbers" do
+    array = [3, 1, 2]
+    assert_sort array
+  end
 end
