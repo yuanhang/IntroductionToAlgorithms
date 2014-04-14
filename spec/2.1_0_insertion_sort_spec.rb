@@ -24,7 +24,7 @@ describe InsertionSort do
   end
   
   context "all numbers" do
-    array = [3, 1, 2]
+    array = [2, 1]
     assert_sort array
   end
 end
