@@ -22,9 +22,17 @@ describe InsertionSort do
       assert_sort array
     end
   end
-  
-  context "all numbers" do
-    array = [2, 1]
-    assert_sort array
+
+  context "unsorted numbers" do
+    it "two numbers" do
+      array = [2, 1]
+      assert_sort array
+    end
+
+    it "many unsorted numbers" do
+      array = [2, 1, -2, 4, 23, 78, 3, 0, 1.2]
+      assert_sort array
+    end
   end
+
 end
